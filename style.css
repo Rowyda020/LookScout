@@ -1,0 +1,625 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    overflow-x: hidden;
+   
+}
+
+.nav {
+    background-color: #f8f9fa; 
+    padding: 10px 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 15px;
+}
+
+.nav-body {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+.nav-intro{
+    display: flex;
+    align-items: center;
+}
+
+.nav-intro img {
+    height: 50px;
+    margin-right: 20px;
+}
+
+.nav-intro ul {
+    display: flex;
+    list-style: none;
+}
+
+.nav-intro ul li {
+    margin: 0 15px;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    color: #333;
+    transition: color 0.3s ease;
+}
+
+.nav-intro ul li:hover {
+    color: #007bff; 
+}
+
+.sign-buttons {
+    display: flex;
+    align-items: center;
+}
+
+button {
+    border: none;
+    outline: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.sign-buttons button {
+    font-size: 18px;
+    justify-content: space-between;
+    border-radius: 15px;
+}
+
+.sign-up {
+    all: unset;
+    padding: 20px 20px;
+    color: #437EF7;
+}
+
+.sign-up:hover {
+    cursor: pointer;
+}
+
+.log-in {
+    background-color: #437EF7;
+    border: none;
+    padding: 20px 20px;
+    color: white;
+}
+
+.hero {
+    text-align: center;
+    background-color: #F8F9FB;
+    height: 500px;
+}
+
+.discount {
+    color: #437EF7;
+    font-size: 20px;
+    font-weight: 600;
+    margin: 0;
+    padding-top: 100px;
+}
+
+.hero-header {
+    color: #272D37;
+    font-size: 54px;
+    font-weight: 800;
+}
+
+hr {
+    margin: 0;
+}
+
+.galary {
+    margin: 40px 50px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    height: auto;
+}
+
+.first-galary {
+    grid-row: 1;
+}
+
+.rest {
+    grid-column: 2;
+}
+
+.description, .rest-description, .date {
+    color: #4F5B63;
+}
+
+.rest-galary {
+    display: flex;
+}
+
+.rest-galary img {
+    width: 300px;
+    height: 150px;
+    margin: 20px;
+}
+
+.conact-form {
+    background-color: #2B63D9;
+    height: 250px;
+    padding: 50px 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.welcome {
+    width: 65%;
+}
+
+.conact-form h1 {
+    color: #f8f9fa;
+    font-size: 45px;
+}
+
+.conact-form p {
+    color: #B1CCFB;
+    font-size: 20px;
+}
+
+.form {
+    text-align: center;
+    margin: 50px 0;
+}
+
+.input-container {
+    position: relative;
+    width: 300px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+}
+
+input[type="email"] {
+    width: 100%;
+    padding: 20px 20px;
+    padding-right: 80px; 
+    font-size: 16px;
+    border: 1px solid #ccc;
+    outline: none;
+    box-sizing: border-box;
+    border-radius: 5px;
+}
+
+.submit {
+    position: absolute;
+    right: 0px;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 22px 30px;
+    border: none;
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.form p {
+    margin-top: 10px;
+    color: #B1CCFB;
+    font-size: 16px;
+}
+
+
+.blog-posts {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.blog-posts h1 {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.posts-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.post {
+    padding: 20px;
+}
+
+.post img {
+    max-width: 100%;
+    border-radius: 8px;
+}
+
+.post p {
+    color: #888;
+    font-size: 14px;
+}
+
+.post h2 {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.post a {
+    color: #007BFF;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.post a:hover {
+    text-decoration: underline;
+}
+
+.digital-sign{
+    background-color: #2B63D9;
+    height: 320px;
+    text-align: center;
+    padding: 50px 150px;
+    color: white;
+}
+
+.digital-sign h1{
+    font-size: 45px;
+    font-weight: 800;
+}
+
+.sign{
+    padding: 20px;
+    background-color: white;
+    color: #0056b3;
+    font-weight: 600;
+    margin-top: 20px;
+    border: none;
+    cursor: pointer;
+}
+
+.login {
+    display: none;
+    padding: 20px;
+    background-color: #0056b3;
+    color: white;
+    font-weight: 600;
+    margin-top: 20px;
+    border: none;
+    cursor: pointer;
+}
+
+.footer {
+    background-color: #151B28;
+    color: white;
+}
+
+.footer-content {
+    padding: 150px 100px;
+    height: auto;
+    display: flex;
+    
+}
+
+
+.wrapper-cont{
+    display: flex;
+    padding-bottom: 10px;
+    
+
+}
+
+
+.footer-section {
+    flex: 1;
+    min-width: 250px;
+    margin: 10px;
+   
+}
+
+
+.footer-content ul {
+    list-style: none;
+    margin-top: 20px;
+    padding: 5px;
+}
+
+.footer-content li {
+    padding-top: 10px;
+}
+
+.footer-content a {
+    text-decoration: none;
+    color: #ccc;
+    font-size: 14px;
+}
+
+.footer .input-container {
+    margin: 0;
+    border: none;
+    margin-top: 20px;
+    display: flex;
+}
+
+.footer input[type="email"] {
+    background-color: #2C3444;
+    border: none;
+    padding: 10px;
+    flex: 1;
+    border-radius: 3px 0 0 3px;
+    color: white;
+}
+
+.footer .submit {
+    border-radius: 0 3px 3px 0;
+    padding: 10px 20px;
+    background-color: #0056b3;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+
+
+
+
+@media screen and (max-width: 760px) {
+    html, body {
+        overflow-x: hidden;
+        margin: 0;
+        padding: 0;
+    }
+        .nav {
+            width: 100%;
+        }
+        .nav-body {
+            width: 100%;
+        }
+        .container {
+            all: unset;
+            max-width: 100%;
+            margin: 0;
+        }
+        .nav-intro ul li {
+            margin: 0 5px;
+        }
+        hr {
+            width: 100%;
+        }
+        .nav-intro img {
+            height: 20px;
+        }
+        .nav-intro ul {
+            display: flex;
+            list-style: none;
+        }
+        .nav-intro ul li {
+            font-size: 5px;
+        }
+        .sign-buttons {
+            font-size: 10px;
+            margin-right: 10px;
+        }
+        .sign-buttons button {
+            font-size: 10px;
+        }
+        button {
+            padding: 2px 2px;
+            font-size: 10px;
+        }
+        .hero {
+            height: 350px;
+            width: 100%;
+        }
+        .discount {
+            font-size: 10px;
+        }
+        .hero-header {
+            font-size: 20px;
+            font-weight: 600;
+        }
+        .galary {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            font-size: 10px;
+            margin: 15px;
+            width: 90%;
+        }
+        .rest-galary {
+            display: flex;
+            width: 100%;
+        }
+        .rest-galary img {
+            width: 100px;
+            height: 80px;
+            margin: 20px;
+        }
+        .first-galary img {
+            width: 100%;
+            margin: 0;
+            height: 150px;
+        }
+        .conact-form {
+            height: 150px;
+            width: 100%;
+            margin: 0;
+            padding: 0 10px;
+            font-size: 10px;
+        }
+        .conact-form h1 {
+            font-size: 18px;
+        }
+        .conact-form p {
+            font-size: 10px;
+        }
+        .input-container {
+            width: 100%;
+        }
+        input[type="email"] {
+            padding: 5px 5px;
+            font-size: 10px;
+        }
+        .submit {
+            padding: 6px 6px;
+            font-size: 10px;
+        }
+        .form p {
+            font-size: 10px;
+        }
+    
+    .input-container {
+        width: 100%;
+    }
+    input[type="email"] {
+        padding: 5px 5px;
+        font-size: 10px;
+    }
+    .submit {
+        padding: 6px 6px;
+        font-size: 10px;
+    }
+    .form p {
+        font-size: 10px;
+    }
+
+    .posts-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .digital-sign{
+        padding: 100px 100px;
+        font-size: 10px;
+    }
+
+    .digital-sign h1{
+        font-size: 20px;
+    }
+    .login {
+        display: inline-block;
+    }
+
+    .sign, .login {
+      
+        margin: 5px;
+    }
+
+    .footer-content {
+        padding: 20px 15px;
+        display: block;
+        
+    }
+
+    .footer-section .logo{
+        width: 100%;
+    }
+    
+    .wrapper-cont{
+        display: grid;
+        grid-template-columns: repeat(3, 150px);
+        font-size: 10px;
+    
+    }
+    
+    .footer-section {
+        margin-top: 20px;
+    }
+    
+    
+
+
+  
+}
+
+
+
+@media screen and (max-width: 375px) {
+    html, body {
+        overflow-x: hidden;
+        margin: 0;
+        padding: 0;
+    }
+
+    .nav {
+        width: 100%;
+    }
+    .nav-body {
+        width: 100%;
+    }
+    .container {
+        all: unset;
+        max-width: 100%;
+        margin: 0;
+    }
+    .nav-intro ul li {
+        margin: 0 3px;
+    }
+    hr {
+        width: 100%;
+    }
+    .nav-intro img {
+        height: 15px;
+    }
+    .nav-intro ul {
+        display: flex;
+        list-style: none;
+    }
+    .nav-intro ul li {
+        font-size: 8px;
+    }
+    button {
+        padding: 2px 2px;
+        font-size: 8px;
+    }
+    .hero {
+        width: 100%;
+    }
+    .discount {
+        color: #437EF7;
+        font-size: 8px;
+    }
+    .hero-header {
+        color: #272D37;
+        font-size: 18px;
+        font-weight: 600;
+    }
+    .rest-galary img {
+        width: 80px;
+        height: 60px;
+        margin: 10px;
+    }
+    .first-galary img {
+        width: 100%;
+        height: 120px;
+    }
+    .conact-form {
+        height: 120px;
+        width: 100%;
+        margin: 0;
+        padding: 0 5px;
+        font-size: 8px;
+    }
+    .posts-grid {
+        grid-template-columns: 1fr;
+    }
+    .digital-sign {
+        padding: 20px 50px;
+        height: auto;
+    }
+    .digital-sign h1 {
+        font-size: 10px;
+    }
+    .sign, .login {
+        width: 100%;
+        margin: 10px 0;
+    }
+    .wrapper-cont {
+        display: grid;
+        grid-template-columns: repeat(2, 150px);
+        font-size: 5px;
+    }
+}
